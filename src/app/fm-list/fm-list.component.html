@@ -1,0 +1,18 @@
+<!-- this is the new syntax for ng-repeat -->
+  
+<ul>
+  <ul *ngFor="let person of jsonResultant">
+            
+      {{person.S}} 
+      
+      <li>{{person.P}}</li>
+      <li>{{person.N}}</li>
+      <li>{{person.V}}</li>
+      <li>{{person.Thumbnail["#text"]}}</li>
+         
+  </ul>
+</ul>
+<!-- HERE: added this error message -->
+<section *ngIf="errorMessage">
+  {{errorMessage}}
+</section>
